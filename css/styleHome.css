@@ -1,0 +1,200 @@
+
+body {
+    font-family: 'Noto Serif', serif;
+
+}
+
+header {
+    background:#C0C0C0;
+    padding:20px 0;
+}
+.caixa-cabecalho {
+    position: relative;
+    width:940px;
+    margin: 0 auto;
+}
+
+nav {
+    position: absolute;
+    top: 110px;
+    right: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 0 0 15px;
+}
+
+nav a {
+    text-transform: uppercase;
+    font-weight:lighter;
+    color: #000000;
+    font-size: 22px;
+    text-decoration: none;
+    
+}
+
+nav a:hover {
+    color:#C78C19;
+    text-decoration: underline;
+}
+
+
+.tituloPrincipal{
+    padding-left: 20px;
+}
+
+.principal {
+    width:940px;
+    margin: 0 auto;
+    padding: 3em 0;
+    background: #FEFEFE;
+    
+}
+
+.banner{
+    width: 100%;
+    padding: 1px;
+}
+
+.tituloPrincipal {
+    text-align: center;
+    font-size: 2em;
+    margin: 0 0 1em;
+    clear: left;
+}
+
+.principal p{
+    margin:0 0 1em;
+
+}
+
+.principal strong {
+    font-weight: bold;
+}
+
+.principal em {
+    font-style: italic;
+}
+
+.utensilios{
+    width: 120px;
+    float: left;
+    margin: 0 20px 20px 0 ;
+    border-radius: 5px;
+}
+
+p {
+    text-align: center;
+}
+.missao{
+    font-size: 20px;
+}
+
+em strong{
+    color: 	#c95613;
+}
+
+.mapa {
+    padding: 3em 0;
+    background: linear-gradient(#FEFEFE,#888888);
+}
+
+.mapa-conteudo{
+    width:940px;
+    margin: 0 auto;
+}
+.mapa p {
+    text-align: center;
+    margin: 0 0 2em;
+}
+
+.beneficios{
+    padding: 3em 0;
+    background:#888888;
+}
+
+.imgBeneficios {
+    width: 60%;
+    opacity: 1;
+    transition: 400ms;
+    box-shadow: 10px 10px 10px 0 #000000;
+}
+
+.imgBeneficios:hover {
+    opacity: 0.3;
+}
+
+.itens {
+    line-height: 1.5;
+}
+
+.itens:first-child {
+    font-weight: bold;
+}
+
+.itens:before{
+    content: "📌";
+}
+/* INLINE O ITEM OCUPA SOMENTE SEU ESPAÇO
+BLOCK O CONTEUDO BLOQUEIA TODA A PARTE QUE ELE FOR COLADO
+*/
+.conteudo-beneficios{
+    width: 640px;
+    margin: 0 auto;
+}
+.lista-beneficios{
+    width:40%;
+    display: inline-block; 
+    vertical-align: top;
+}
+.imgBeneficios{
+    width: 60%;
+}
+.video {
+    width: 560px;
+    margin: 2em auto;
+}
+footer{
+    text-align: center;
+    background: url("/img/bg.jpg");
+    background: #000000;
+}
+
+.Copyrigth {
+    color: #BBBBBB;
+    font-size: 20px;
+    margin-top: 18px;
+}
+
+
+@media screen and (max-width: 480px){
+    .caixa-cabecalho,.principal, .conteudo-beneficios, .mapa-conteudo {
+        width: auto;
+    }
+
+
+    h1 {
+        text-align:center;
+    }
+
+    nav{
+        position:static;
+    
+    }
+
+    .tituloPrincipal, p{
+        text-align: initial;
+    }
+
+    .lista-beneficios, .imgBeneficios {
+        width: 100%;
+
+    }  
+    
+    .video {
+        width: 98%;
+    }
+
+
+}
